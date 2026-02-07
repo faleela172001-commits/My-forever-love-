@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      background-color: #fff3f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    .box {
+      text-align: center;
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #ff5c8a;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    #yes {
+      background-color: #ff5c8a;
+      color: white;
+    }
+    #no {
+      background-color: #ddd;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="https://i.imgur.com/3ZQ3ZzT.png" width="120"><br><br>
+    <h2>Will you be my forever? ❤️</h2>
+    <button id="yes" onclick="alert('Yayyy 🥰 I love you forever ❤️')">YES</button>
+    <button id="no">NO</button>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("no");
+    noBtn.addEventListener("mouseover", () => {
+      noBtn.style.left = Math.random() * 80 + "vw";
+      noBtn.style.top = Math.random() * 80 + "vh";
+    });
+  </script>
+</body>
+</html>
